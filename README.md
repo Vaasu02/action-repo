@@ -2,7 +2,7 @@
 
 This repository is configured to send webhook events to the **webhook-repo** Flask application.
 
-## 📋 Purpose
+## Purpose
 
 This repository triggers GitHub webhooks on the following actions:
 
@@ -10,13 +10,13 @@ This repository triggers GitHub webhooks on the following actions:
 - **Pull Request**: When a PR is opened
 - **Merge**: When a PR is merged
 
-## 🔧 Webhook Configuration
+## Webhook Configuration
 
 The webhook is configured to send events to:
 - **URL**: `https://your-webhook-repo-url.com/webhook/receiver`
 - **Events**: Pushes, Pull Requests
 
-## 🧪 Testing
+## Testing
 
 ### Test PUSH Event
 ```bash
@@ -42,7 +42,7 @@ git push -u origin feature/test-pr
 - Open a PR as described above
 - Merge the PR via GitHub UI
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 action-repo/
@@ -50,10 +50,7 @@ action-repo/
 └── .gitignore
 ```
 
-## 🔗 Related Repository
+## Related Repository
 
 - **webhook-repo**: Contains the Flask application that receives these webhook events
 
----
-
-Made for the Developer Assessment Task
